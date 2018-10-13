@@ -1,94 +1,125 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title>Beastreaming - Live</title>
   <style>
-      /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-      .navbar {
-        margin-bottom: 50px;
-        border-radius: 0;
-      }
-      
-      /* Remove the jumbotron's default bottom margin */ 
-       .jumbotron {
-        margin-bottom: 0;
-      }
-     
-      /* Add a gray background color and some padding to the footer */
-      footer {
-        background-color: #f2f2f2;
-        padding: 25px;
-      }
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
   </style>
 </head>
-
-
 <body>
-  <div class="jumbotron" background = "header.jpg">
-    <div class="container text-center">
-      <a href="#" class="btn btn-info btn-lg">
-        <span class = "glyphicon glyphicon-bold"></span>Stream
-        </a>  
-      <h3>Just Stream It</h3> 
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>StreamIt</h1>      
+    <p></p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="tigerhacks2.html">Trending</a></li>
+        <li><a href="#">Live</a></li>
+        <!--<li><a href="#">Stores</a></li>
+        <li><a href="#">Contact</a></li> !-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+       <!--  <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li> !-->
+      </ul>
     </div>
   </div>
+</nav>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="trending.html">Trending</a></li>
-          <li class="active"><a href="live.html">Live</a></li>
-          <li><a href="AboutUs.html">About Us</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="panel-primary">
-          <div class="panel-body">
-            <iframe src="https://www.youtube.com/embed/zpfd41a-4Aw"
-              class="img-responsive"
-              style="width:100%"
-              height="500"
-              alt="Live Video Feed"
-            </iframe>
-          </div>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Fox News Live</div>
+          <div class="panel-body"><iframe src= "https://www.youtube.com/embed/Gt4hZrOMKds" class="img-responsive" style="width:100%" alt="Image"></iframe></div>
+          <div class="panel-footer">Live</div>
         </div>
-      </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Al Jazeera Live</div>
+          <div class="panel-body"><iframe src="https://www.youtube.com/embed/FdtQ2ZgLbEs" class="img-responsive" style="width:100%" alt="Image"></iframe></div>
+          <div class="panel-footer">Live</div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Third Stream</div>
+          <div class="panel-body"><iframe src="https://livestream.com/accounts/11816721/events/3750190/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" class="img-responsive" style="width:100%" alt="Image"></iframe></div>
+          <div class="panel-footer">Live</div>
+        </div>
     </div>
   </div>
-</body>
+</div><br>
 
-</html>
-
-
-<!--html>
-    <h1 align = "center">Live Videos</h1>
-    <div><h1 style="color:#5cd6d6">dbjsbf</h1></div>
-    <div class="panel-body"><iframe src="https://www.youtube.com/embed/zpfd41a-4Aw" class="img-responsive" style="width:100%" height = "500" alt="Image"></iframe></div>
-    <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">WALB News</div>
+        <div class="panel-body"><iframe allowfullscreen src="https://livestream.com/accounts/11279058/events/3645614/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" class="img-responsive" style="width:100%" alt="Image"></iframe></div>
+        <div class="panel-footer">Live</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">dbjsbf</div>
+          <div class="panel-body"><iframe src="https://www.youtube.com/embed/zpfd41a-4Aw" class="img-responsive" style="width:100%" alt="Image"></iframe></div>
+          <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">dbjsbf</div>
+          <div class="panel-body"><iframe src="https://www.youtube.com/embed/zpfd41a-4Aw" class="img-responsive" style="width:100%" alt="Image"></iframe></div>
+          <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        </div>
+    </div>
   </div>
-</html-->
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get notified:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
+</html>
