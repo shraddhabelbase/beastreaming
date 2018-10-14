@@ -4,35 +4,20 @@
   <title>Live</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/nav.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-    
-    /* Remove the jumbotron's default bottom margin */ 
-    .jumbotron {
-      margin-bottom: 0;
-    }
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Live Videos</h1>      
-    <p></p>
-  </div>
-</div>
+    <div class="jumbotron" background = "header.jpg">
+        <div class="container text-center">
+          <a href="index.html" class="btn btn-info btn-lg">
+            <span class = "glyphicon glyphicon-bold"></span>Stream
+          </a>  
+          <h3>Live Videos</h3> </div>
+      </div>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -46,8 +31,8 @@
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="trending.html">Trending</a></li>
-        <li><a href="live.html">Live</a></li>
-        <li><a href="AboutUs.html">AboutUs</a></li>
+        <li class="active"><a href="live.html">Live</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
        </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
